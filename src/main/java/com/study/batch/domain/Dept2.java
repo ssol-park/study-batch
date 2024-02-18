@@ -3,7 +3,6 @@ package com.study.batch.domain;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -13,7 +12,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Entity
 @Table(name = "dept")
-public class Dept {
+public class Dept2 {
 
     @Id
     private Integer deptNo;
@@ -21,7 +20,7 @@ public class Dept {
     private String loc;
 
     @Builder
-    public Dept(Integer deptNo, String name, String loc) {
+    public Dept2(Integer deptNo, String name, String loc) {
         this.deptNo = deptNo;
         this.name = name;
         this.loc = loc;
